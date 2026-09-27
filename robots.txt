@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nplovestatus.github.io/Tool-Box-India-/sitemap.xml
