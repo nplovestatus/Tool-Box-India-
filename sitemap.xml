@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://nplovestatus.github.io/Tool-Box-India-/</loc>
-  </url>
-
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/pdf-to-image.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/image-to-pdf.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/pdf-resize.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/image-compressor.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/image-resize.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/image-converter.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/pdf-merge.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/pdf-split.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/percentage-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/age-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/emi-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/emi-loan-amount.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/gst-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/discount-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/profit-loss.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/sip-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/salary-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/cgpa-calculator.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/date-difference.html</loc></url>
+  <url><loc>https://nplovestatus.github.io/Tool-Box-India-/qr-generator.html</loc></url>
 </urlset>

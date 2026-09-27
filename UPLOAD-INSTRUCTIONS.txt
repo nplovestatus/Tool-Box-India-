@@ -1,0 +1,19 @@
+ToolBox India SEO Package
+
+Files included:
+- 20 independent SEO pages (.html)
+- sitemap.xml
+- robots.txt
+
+Upload all files to the ROOT of the GitHub repository:
+nplovestatus/Tool-Box-India-
+
+Do not delete index.html.
+
+After upload:
+1. Open the website and test 2-3 SEO pages.
+2. Google Search Console -> Sitemaps -> submit sitemap.xml (only if the existing sitemap needs updating).
+3. URL Inspection -> test important tool URLs -> Request Indexing.
+
+Important:
+These SEO pages link users to the existing working tool interface in index.html. They do not duplicate the full JavaScript tool engine.
