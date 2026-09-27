@@ -156,6 +156,8 @@ body.dark .drop{background:#101a2c;border-color:#41536f}
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 "use strict";
 
@@ -250,11 +252,12 @@ document.addEventListener("change",e=>{if(e.target.id==="fileInput"){const fs=Ar
 
 async function pdfjs(){
  try{
-   if(window.__pdfjs)return window.__pdfjs;
-   window.__pdfjs=await import("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs");
-   window.__pdfjs.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
-   return window.__pdfjs;
- }catch(e){throw new Error("PDF library load झाली नाही. इंटरनेट कनेक्शन तपासा.");}
+   if(window.pdfjsLib){
+     window.pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+     return window.pdfjsLib;
+   }
+   throw new Error("PDF library load झाली नाही. इंटरनेट कनेक्शन तपासा.");
+ }catch(e){throw e;}
 }
 function requirePDFLib(){if(!window.PDFLib)throw new Error("PDF library load झाली नाही. इंटरनेट कनेक्शन तपासा.");}
 
@@ -378,7 +381,7 @@ async function generateQR(){
  try{
   const text=document.getElementById("qrtext").value.trim();if(!text)return document.getElementById("qrResult").innerHTML="❌ Message किंवा link लिहा.";
   const box=document.getElementById("qrResult");box.classList.add("show");box.innerHTML="QR तयार होत आहे...";
-  if(!window.QRCode){await loadScript("https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js");}
+  if(!window.QRCode)throw new Error("QR library load झाली नाही. इंटरनेट कनेक्शन तपासा.");
   box.innerHTML='<div id="qrCanvas"></div><p>QR तयार आहे. Mobile camera ने scan करून तपासा.</p><div class="actions"><button class="primary" onclick="downloadQR()">Download QR</button></div>';
   new QRCode(document.getElementById("qrCanvas"),{text:text,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});
  }catch(e){document.getElementById("qrResult").innerHTML="❌ QR library load झाली नाही. इंटरनेट कनेक्शन तपासा."}
